@@ -312,7 +312,7 @@ h1 {
     color: red;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     .topnav {
         background-color: blue;
      }
@@ -325,6 +325,28 @@ h1 {
     .card {
         display: block;
      }
+
+     .card1 h4, .card2 h4, .card3 h4 {
+        text-align: center;
+     }
+
+     .car img {
+        height: 20vh;
+        width: 40vh;
+        position: absolute;
+        bottom: 0px;
+        animation-name: car;
+        animation-duration: 1s;
+    }
+
+    @keyframes car {
+        from {
+            margin-left: 100%;
+        }
+        to {
+            margin-left: 50%;
+        }
+    }
  
      .carTest {
          display:block;
@@ -345,9 +367,13 @@ h1 {
          width: 100%;
          display: block;
      }
+
+     .contact {
+        margin-bottom: 25px;
+    }
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (max-width: 414px) {
     .topnav {
         background-color: green;
      }
@@ -360,6 +386,28 @@ h1 {
     .card {
         display: block;
      }
+
+     .card1 h4, .card2 h4, .card3 h4 {
+        text-align: center;
+     }
+
+     .car img {
+        height: 20vh;
+        width: 40vh;
+        position: absolute;
+        bottom: 0px;
+        animation-name: car;
+        animation-duration: 1s;
+    }
+
+    @keyframes car {
+        from {
+            margin-left: 50%;
+        }
+        to {
+            margin-left: 50%;
+        }
+    }
  
      .carTest {
          display:block;
@@ -380,4 +428,18 @@ h1 {
          width: 100%;
          display: block;
      }
+
+     .contact {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 875px) and (orientation: landscape ){
+    .logo {
+        display: none;
+    }
+
+    .banner {
+        height: 60vh;
+    }
 }
