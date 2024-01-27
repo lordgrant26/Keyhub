@@ -440,3 +440,9 @@ h1 {
          margin-bottom: 25px;
      }
 }
+
+@media screen and (min-width: 414px) {
+    .info { 
+        display: block;
+    }
+}
