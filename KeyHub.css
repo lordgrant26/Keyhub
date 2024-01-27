@@ -311,3 +311,73 @@ h1 {
 .social-media h1 {
     color: red;
 }
+
+@media screen and (min-width: 375px) {
+    .topnav {
+        background-color: blue;
+     }
+
+    .topnav a {
+        font-size: 12px;
+        line-height: 6px;   
+    }
+
+    .card {
+        display: block;
+     }
+ 
+     .carTest {
+         display:block;
+         justify-content:column;
+         
+     }
+     .carTest-img img {
+         width: 100%;
+         height: 60vh;
+     }
+ 
+     .ourServices {
+         line-height: 33px;
+         height: 50vh;
+     }
+ 
+     .info {
+         width: 100%;
+         display: block;
+     }
+}
+
+@media screen and (min-width: 414px) {
+    .topnav {
+        background-color: green;
+     }
+
+    .topnav a {
+        font-size: 12px;
+        line-height: 6px;   
+    }
+
+    .card {
+        display: block;
+     }
+ 
+     .carTest {
+         display:block;
+         justify-content:column;
+         
+     }
+     .carTest-img img {
+         width: 100%;
+         height: 60vh;
+     }
+ 
+     .ourServices {
+         line-height: 33px;
+         height: 50vh;
+     }
+ 
+     .info {
+         width: 100%;
+         display: block;
+     }
+}
