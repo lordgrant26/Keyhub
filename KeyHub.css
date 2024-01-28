@@ -445,7 +445,7 @@ h1 {
 
     .banner-btn {
         position: absolute;
-        top: 90px;
+        top: 120px;
         left: 32%;
     }
 
@@ -462,8 +462,25 @@ h1 {
         line-height: 25px;
     }
 
-    .ourServices p {
-        font-size: 14px;
-        line-height: 35px;
+    .ourServices {
+        padding: 7px;
     }
+    .ourServices p {
+        font-size: 11px;
+        line-height: 30px;
+    }
+
+    .ourServices h2 {
+        font-size: 17px;
+    }
+
+    .card1 h4, .card2 h4, .card3 h4 {
+        text-align: center;
+        font-size: 10px;
+     }
+
+     .card1 .cardbtn1 {
+        font-size: 11px;
+        padding: 6px;
+     }
 }
