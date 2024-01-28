@@ -442,4 +442,28 @@ h1 {
     .banner {
         height: 60vh;
     }
+
+    .banner-btn {
+        position: absolute;
+        top: 75px;
+        left: 32%;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .card1 h4, .card2 h4, .card3 h4 {
+        font-size: 12px;
+    }
+
+    .road h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .ourServices p {
+        font-size: 14px;
+        line-height: 35px;
+    }
 }
