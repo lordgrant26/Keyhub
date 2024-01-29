@@ -484,3 +484,115 @@ h1 {
         padding: 6px;
      }
 }
+
+@media screen and (max-width: 430px) {
+    .topnav {
+        background-color: green;
+     }
+
+    .topnav a {
+        font-size: 12px;
+        line-height: 6px;   
+    }
+
+    .card {
+        display: block;
+     }
+
+     .card1 h4, .card2 h4, .card3 h4 {
+        text-align: center;
+     }
+
+     .car img {
+        height: 20vh;
+        width: 40vh;
+        position: absolute;
+        bottom: 0px;
+        animation-name: car;
+        animation-duration: 1s;
+    }
+
+    @keyframes car {
+        from {
+            margin-left: 50%;
+        }
+        to {
+            margin-left: 50%;
+        }
+    }
+ 
+     .carTest {
+         display:block;
+         justify-content:column;
+         
+     }
+     .carTest-img img {
+         width: 100%;
+         height: 60vh;
+     }
+ 
+     .ourServices {
+         line-height: 33px;
+         height: 50vh;
+     }
+ 
+     .info {
+         width: 100%;
+         display: block;
+     }
+
+     .contact {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 932px) and (orientation: landscape ){
+    .logo {
+        display: none;
+    }
+
+    .banner {
+        height: 60vh;
+    }
+
+    .banner-btn {
+        position: absolute;
+        top: 120px;
+        left: 32%;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .card1 h4, .card2 h4, .card3 h4 {
+        font-size: 12px;
+    }
+
+    .road h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .ourServices {
+        padding: 7px;
+    }
+    .ourServices p {
+        font-size: 11px;
+        line-height: 30px;
+    }
+
+    .ourServices h2 {
+        font-size: 17px;
+    }
+
+    .card1 h4, .card2 h4, .card3 h4 {
+        text-align: center;
+        font-size: 10px;
+     }
+
+     .card1 .cardbtn1 {
+        font-size: 11px;
+        padding: 6px;
+     }
+}
