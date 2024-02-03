@@ -1,44 +1,65 @@
 * {
-    box-sizing:border-box;
-    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
-}
-
-.logo {
-    color: rgb(57, 57, 61);
-    line-height: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.logo-span {
-    color: rgb(0, 255, 17);
-    font-size: 20px;
-    display: block;
-    text-align: center;
+    padding: 0;
 }
 
 .topnav {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: red;
-}
-
-.topnav a {
-    padding: 20px;
-    font-size: 18px;
+    align-items: center;
+    background-color: teal;
     color: white;
 }
 
-a:hover {
-    background-color: blue;
-    border-radius: 15px;
-    border: none;
+.logo {
+    margin: .5rem;
 }
 
-.topnav li {
-    list-style-type: none;
+.navLink ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
+
+.navLink li {
+    list-style: none;
+}
+
+.navLink li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navLink li:hover {
+    background-color: #077878;
+}
+
+.toggle-btn {
+    position: absolute;
+    left: 90%;
+    top: 45px;
+}
+
+.toggle-btn .bar{
+    width: 30px;
+    height: 3px;
+    display: none;
+    margin: 3px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+ hr {
+    width: 50%;
+ }
+
+
 
 .banner {
     height: 60vh;
@@ -90,6 +111,8 @@ h1 {
 .banner-btn2:hover {
     transform:translateX(10px);
 }
+
+/*-----------------------------------------------------------3Cards----------------------------------------------------------------*/
 
 .card {
     width: 100%;
@@ -172,6 +195,8 @@ h1 {
     margin-bottom: 25px;
 }
 
+/*-----------------------------------------------------------Car Test and Services----------------------------------------------------------------*/
+
 .carTest {
     width: 100%;
     display: flex;
@@ -195,6 +220,8 @@ h1 {
     color: olive;
 }
 
+/*-------------------------------------------------------------CarTest and Services-----------------------------------------------------------------*/
+
 .ourServices h2 {
     color: blue;
     font-size: 28px;
@@ -215,7 +242,7 @@ h1 {
     position: absolute;
     bottom: 0px;
     animation-name: car;
-    animation-duration: 40s;
+    animation-duration: 30s;
 }
 
 @keyframes car {
@@ -236,12 +263,12 @@ h1 {
 
 .road h3 {
     text-align: center;
-    line-height: 70px;
-    color: peachpuff;
+    line-height: 50px;
+    color: rgb(63, 43, 238);
     font-size: 30px;
 }
 
-
+/*-------------------------------------------------------------Conatact and Info------------------------------------------------------------*/
 
 .info {
     background-image: url(paper.jpg);
@@ -250,10 +277,6 @@ h1 {
     position: absolute;
     width: 100%;
     min-height: 60vh;
-   
-}
-
-.info {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -312,15 +335,84 @@ h1 {
     color: red;
 }
 
-@media screen and (max-width: 375px) {
-    .topnav {
-        background-color: blue;
-     }
 
-    .topnav a {
-        font-size: 12px;
-        line-height: 6px;   
+
+
+
+@media screen and (max-width: 500px) {
+    .toggle-btn .bar{
+        display: flex;
     }
+
+    .navLink {
+        display: none;
+        width: 100%;
+    }
+
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navLink ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navLink li {
+        text-align: center;
+    }
+
+    .navLink.active {
+        display: flex;
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+   
+    .toggle-btn .bar{
+        display: flex;
+    }
+
+    .navLink {
+        display: none;
+        width: 100%;
+    }
+
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navLink ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navLink li {
+        text-align: center;
+    }
+
+    .navLink.active {
+        display: flex;
+    }
+
+    .toggle-btn {
+        position: absolute;
+        left: 90%;
+        top: 45px;
+    }
+    
+    .toggle-btn .bar{
+        width: 30px;
+        height: 3px;
+        display: flex;
+        margin: 3px;
+        background-color: white;
+        border-radius: 10px;
+    }    
 
     .card {
         display: block;
@@ -353,6 +445,7 @@ h1 {
          justify-content:column;
          
      }
+
      .carTest-img img {
          width: 100%;
          height: 60vh;
@@ -371,18 +464,38 @@ h1 {
      .contact {
         margin-bottom: 25px;
     }
+
 }
 
 @media screen and (max-width: 414px) {
-    .topnav {
-        background-color: green;
-     }
-
-    .topnav a {
-        font-size: 12px;
-        line-height: 6px;   
+    .toggle-btn .bar{
+        display: flex;
     }
 
+    .navLink {
+        display: none;
+        width: 100%;
+    }
+
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navLink ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navLink li {
+        text-align: center;
+    }
+
+    .navLink.active {
+        display: flex;
+    }
+
+   
     .card {
         display: block;
      }
@@ -434,18 +547,14 @@ h1 {
     }
 }
 
-@media screen and (max-width: 875px) and (orientation: landscape ){
-    .logo {
-        display: none;
-    }
-
+@media screen and (max-width: 896px) and (orientation: landscape ){
     .banner {
         height: 60vh;
     }
 
     .banner-btn {
         position: absolute;
-        top: 120px;
+        top: 200px;
         left: 32%;
     }
 
@@ -486,9 +595,6 @@ h1 {
 }
 
 @media screen and (max-width: 430px) {
-    .topnav {
-        background-color: green;
-     }
 
     .topnav a {
         font-size: 12px;
@@ -547,17 +653,13 @@ h1 {
 }
 
 @media screen and (max-width: 932px) and (orientation: landscape ){
-    .logo {
-        display: none;
-    }
-
     .banner {
         height: 60vh;
     }
 
     .banner-btn {
         position: absolute;
-        top: 120px;
+        top: 200px;
         left: 32%;
     }
 
