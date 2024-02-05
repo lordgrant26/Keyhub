@@ -55,8 +55,9 @@ body {
     border-radius: 10px;
     
 }
- hr {
+  hr {
     width: 50%;
+    display: none;
  }
 
 
@@ -414,6 +415,10 @@ h1 {
         border-radius: 10px;
     }    
 
+    hr {
+        display: flex;
+    }
+    
     .card {
         display: block;
      }
@@ -511,6 +516,9 @@ h1 {
         display: flex;
     }
 
+    hr {
+        display: flex;
+    }
    
     .card {
         display: block;
@@ -616,6 +624,10 @@ h1 {
     .topnav a {
         font-size: 12px;
         line-height: 6px;   
+    }
+
+    hr {
+        display: flex;
     }
 
     .card {
